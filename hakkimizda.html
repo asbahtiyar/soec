@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Danışmanlığı - SOEC</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at top, #1e1e24 0%, #0d0d0f 100%);
+            background-attachment: fixed;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px 20px 20px;
+        }
+
+        /* Üst Header & Logo */
+        header {
+            text-align: center;
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .logo {
+            max-width: 260px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
+        }
+
+        /* Ana Sayfaya Dönüş Bağlantısı */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #e50914;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        /* Sayfa İçerik Alanı (Koyu Cam Efekti) */
+        main {
+            width: 100%;
+            max-width: 900px;
+            background: linear-gradient(145deg, #1d1d23, #16161a);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            flex-grow: 1;
+        }
+
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e50914;
+        }
+
+        .content-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #d1d5db;
+        }
+
+        .content-text p {
+            margin-bottom: 16px;
+        }
+
+        .content-text ul {
+            margin: 20px 0 20px 20px;
+        }
+
+        .content-text li {
+            margin-bottom: 10px;
+        }
+
+        /* Alt Alan (Footer) */
+        footer {
+            width: 100%;
+            max-width: 1100px;
+            margin-top: 50px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .footer-info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #d1d5db;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+
+        .footer-info-row a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .footer-info-row a:hover {
+            color: #e50914;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #9ca3af;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 25px;
+            }
+
+            .footer-info-row {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Logo (Tıklandığında Ana Sayfaya Gider) -->
+    <header>
+        <a href="index.html">
+            <img src="soec-logo.png" alt="SOEC" class="logo">
+        </a>
+    </header>
+
+    <!-- Hizmet Detay İçeriği -->
+    <main>
+        <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+        
+        <h1 class="page-title">HAKKIMIZDA</h1>
+
+        <div class="content-text">
+            <p>SOEC Eğitim Danışmanlığı olarak, öğrencilerin akademik hedeflerine ulaşma sürecini bütüncül ve stratejik bir yaklaşımla yönetiyoruz.</p>
+            
+            <p>Uzman kadromuzla sunduğumuz başlıca hizmetler:</p>
+            <ul>
+                <li><strong>Akademik Seviye ve Hedef Analizi:</strong> Öğrencinin mevcut durumunu objektif test ve mülakatlarla tespit ediyoruz.</li>
+                <li><strong>Kişiselleştirilmiş Çalışma Stratejileri:</strong> Sınav müfredatına tam uyumlu, öğrenciye özel haftalık ve aylık gelişim planları hazırlıyoruz.</li>
+                <li><strong>Gelişim Takibi ve Veli Bilgilendirme:</strong> Sürekli deneme analizleriyle eksikleri anında müdahale ile kapatıyoruz.</li>
+            </ul>
+
+            <p>Süreçlerimiz ve danışmanlık randevusu için bizimle iletişime geçebilirsiniz.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info-row">
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <span class="phone">Tel: +90 (212) 000 00 00</span>
+            <span class="address">Adres: Levent Mah. Büyükdere Cdd. No:100 Beşiktaş / İstanbul</span>
+        </div>
+
+        <div class="footer-bottom">
+            © SOEC 2026 — Tüm Hakları Saklıdır.
+        </div>
+    </footer>
+
+</body>
+</html>
